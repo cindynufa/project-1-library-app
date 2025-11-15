@@ -1,7 +1,50 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --font-quicksand: 'Quicksand', sans-serif;
+  --color-neutral-25: #0a0d12;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    @apply quicksand text-neutral-25;
+  }
+}
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Quicksand, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,7 +58,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -54,7 +97,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
