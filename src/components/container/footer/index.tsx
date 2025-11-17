@@ -4,7 +4,8 @@ import Logo from '../../ui/logo';
 
 export default function Footer() {
   return (
-    <footer className="fixed flex flex-col w-full px-37.5 py-20 gap-10 bottom-0 border-t border-neutral-300 justify-between items-center">
+    <footer className="flex flex-col w-full px-37.5 py-20 gap-10 bottom-0 justify-between items-center">
+      <div className="w-full border-t border-neutral-300" />
       <div className="flex flex-col gap-5.5 items-center">
         <Logo />
         <p className="text-md font-semibold text-neutral-950">
