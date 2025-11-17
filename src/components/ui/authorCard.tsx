@@ -13,7 +13,7 @@ export default function AuthorCard({ name, text }: AuthorCardProps) {
         alt="Author Photo"
         className="w-20.25 h-20.25"
       />
-      <div className="flex flex-col gap-0.5">
+      <div className="flex flex-col gap-0.5 justify-center">
         <h3 className="text-lg font-bold text-neutral-900">{name}</h3>
         <div className="flex flex-row gap-1.5">
           <Image src="/icons/book.png" alt="Book Icon" className="w-6 h-6" />
