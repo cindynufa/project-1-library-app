@@ -68,3 +68,9 @@
     @apply font-quicksand bg-white;
   }
 }
+
+@layer utilities {
+  .shadow {
+    box-shadow: 0px 0px 20px 0px #CBCACA40;
+  }
+}
