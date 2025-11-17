@@ -1,13 +1,70 @@
 @import 'tailwindcss';
 
 @theme inline {
+  /* Font - Font Size */
   --font-quicksand: 'Quicksand', sans-serif;
-  --color-neutral-25: #0a0d12;
+
+  --text-display-3xl: 3.75rem;
+  --text-display-3xl--line-height: 4.5rem;
+
+  --text-display-2xl: 3rem;
+  --text-display-2xl-line-height: 3.75rem;
+
+  --text-display-xl: 2.5rem;
+  --text-display-xl-line-height: 3rem;
+
+  --text-display-lg: 2.25rem;
+  --text-display-lg-line-height: 3rem;
+
+  --text-display-md: 2rem;
+  --text-display-md-line-height: 2.5rem;
+
+  --text-display-sm: 1.75rem;
+  --text-display-sm-line-height: 2.375rem;
+
+  --text-display-xs: 1.5rem;
+  --text-display-xs-line-height: 2.25rem;
+
+  --text-xl: 1.25rem;
+  --text-xl-line-height: 2.125rem;
+
+  --text-lg: 1.125rem;
+  --text-lg-line-height: 2rem;
+
+  --text-md: 1rem;
+  --text-md-line-height: 1.875rem;
+
+  --text-sm: 0.875rem;
+  --text-sm-line-height: 1.75rem;
+
+  --text-xs: 0.75rem;
+  --text-xs-line-height: 1.5rem;
+
+  /* Color */
+  --color-neutral-25: #fdfdfd;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e9eaeb;
+  --color-neutral-300: #d5d7da;
+  --color-neutral-400: #a4a7ae;
+  --color-neutral-500: #717680;
+  --color-neutral-600: #535862;
+  --color-neutral-700: #414651;
+  --color-neutral-800: #252b37;
+  --color-neutral-900: #1b1d27;
+  --color-neutral-950: #0a0d12;
+
+  --color-primary-100: #f6f9fe;
+  --color-primary-100b: #d2e3ff;
+  --color-primary-100c: #1c65da;
+
+  --color-accent-red: #d9206e;
+  --color-accent-green: #079455;
+  --color-accent-yellow: #fdb022;
 }
 
 @layer base {
   body {
-    @apply font-quicksand;
+    @apply font-quicksand bg-white;
   }
 }
-
