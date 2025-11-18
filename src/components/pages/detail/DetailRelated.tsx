@@ -12,7 +12,7 @@ export default function DetailRelated() {
         {Array.from({ length: 5 }).map((_, index) => (
           <div key={index}>
             <Link to="/Detail">
-              <BookCard title="Book Name" name="Author name" rate={4.9} />
+              <BookCard src='/images/book-11.png' title="Book Name" author="Author name" rate={4.9} />
             </Link>
           </div>
         ))}
