@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<LayoutProvider/>}>
           <Route index element={<Home />}/>
           <Route path='detail' element={<Detail/>}/>
-          <Route path='detail' element={<Category/>}/>
+          <Route path='category' element={<Category/>}/>
         </Route>
       </Route>
     )
