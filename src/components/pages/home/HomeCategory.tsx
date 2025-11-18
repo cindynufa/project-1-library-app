@@ -5,6 +5,7 @@ import BookCategoryConst from '../../../constants/BookCategory';
 export default function HomeCategory() {
   return (
     <section className="grid grid-cols-6 w-full gap-4 justify-between">
+      {/* Book Category */}
       {BookCategoryConst.map((bookCategory, index) => (
         <Link to={bookCategory.href} className="cursor-pointer">
           <div

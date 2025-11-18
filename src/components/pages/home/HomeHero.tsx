@@ -11,6 +11,7 @@ export default function HomeHero() {
 
   return (
     <section className="flex flex-col gap-4">
+      {/* Hero Section */}
       <Carousel
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
