@@ -8,6 +8,7 @@ import AppProvider from './providers/AppProvider';
 import Home from './components/pages/home';
 import LayoutProvider from './providers/LayoutProvider';
 import Detail from './components/pages/detail';
+import Category from './components/pages/category';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<LayoutProvider/>}>
           <Route index element={<Home />}/>
           <Route path='detail' element={<Detail/>}/>
+          <Route path='detail' element={<Category/>}/>
         </Route>
       </Route>
     )
