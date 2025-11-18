@@ -1,10 +1,10 @@
 import { Share2 } from 'lucide-react';
-import BookCard from '../../ui/bookCard';
 import { Button } from '../../ui/button';
 import DetailNav from './DetailNav';
-import BookInfo from '../../ui/BookInfo';
-import BookDescription from '../../ui/BookDescription';
-import BookTitle from '../../ui/BookTitle';
+import BookInfo from '../../ui/bookInfo';
+import BookDescription from '../../ui/bookDescription';
+import BookTitle from '../../ui/bookTitle';
+import Image from '../../ui/image';
 
 export default function DetailBook() {
   return (
@@ -14,7 +14,7 @@ export default function DetailBook() {
       {/* Detail Book */}
       <div className="flex flex-row gap-9">
         <div className="w-fit border-6 border-neutral-200">
-          <BookCard />
+          <Image src="/images/book-11.png" alt="Book Cover" />
         </div>
 
         <div className="flex flex-col w-full h-fit gap-5">
