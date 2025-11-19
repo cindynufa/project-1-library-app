@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import AuthorCard from '../../ui/authorCard';
 import SectionTitle from '../../ui/sectionTitle';
 
@@ -10,7 +11,9 @@ export default function HomeAuthor() {
       <div className="flex flex-row w-full gap-5 justify-between">
         {Array.from({ length: 4 }).map((_, index) => (
           <div key={index}>
-            <AuthorCard name="Author name" text="5 books" />
+            <Link to="/Author">
+              <AuthorCard name="Author name" text="5 books" />
+            </Link>
           </div>
         ))}
       </div>
