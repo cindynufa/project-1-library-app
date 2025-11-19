@@ -9,6 +9,7 @@ import Home from './components/pages/home';
 import LayoutProvider from './providers/LayoutProvider';
 import Detail from './components/pages/detail';
 import Category from './components/pages/category';
+import Author from './components/pages/author';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path='detail' element={<Detail/>}/>
           <Route path='category' element={<Category/>}/>
+          <Route path='author' element={<Author/>}/>
         </Route>
       </Route>
     )
