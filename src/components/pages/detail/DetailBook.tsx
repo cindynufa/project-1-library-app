@@ -23,8 +23,15 @@ export default function DetailBook() {
               category="Business & Economics"
               title="Psychology of Money"
               author="Morgan Housel"
-              rate={4.9}
-            />
+              titleClassName="text-display-sm font-bold"
+            >
+              <Image
+                src="/icons/rate-star.png"
+                alt="Rate Star"
+                className="w-6 h-6"
+              />
+              <p className="text-md font-bold text-neutral-900">4.9</p>
+            </BookTitle>
 
             <div className="flex flex-row gap-5 items-center">
               <BookInfo value={320} text="Page" />
