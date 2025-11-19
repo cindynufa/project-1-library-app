@@ -10,6 +10,7 @@ import LayoutProvider from './providers/LayoutProvider';
 import Detail from './components/pages/detail';
 import Category from './components/pages/category';
 import Author from './components/pages/author';
+import Cart from './components/pages/cart';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='detail' element={<Detail/>}/>
           <Route path='category' element={<Category/>}/>
           <Route path='author' element={<Author/>}/>
+          <Route path='cart' element={<Cart/>}/>
         </Route>
       </Route>
     )
