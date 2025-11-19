@@ -14,7 +14,7 @@ export default function CheckboxLabel({
   return (
     <div className={`${className} flex flex-row`}>
       <Checkbox className="size-5" />
-      <Label className="text-md font-medium text-neutral-950">{children}</Label>
+      <Label className={`${className}text-md text-neutral-950`}>{children}</Label>
     </div>
   );
 }
