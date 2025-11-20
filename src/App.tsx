@@ -11,6 +11,7 @@ import Detail from './components/pages/detail';
 import Category from './components/pages/category';
 import Author from './components/pages/author';
 import Cart from './components/pages/cart';
+import Checkout from './components/pages/checkout';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='category' element={<Category/>}/>
           <Route path='author' element={<Author/>}/>
           <Route path='cart' element={<Cart/>}/>
+          <Route path='checkout' element={<Checkout/>}/>
         </Route>
       </Route>
     )
