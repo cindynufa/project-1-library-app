@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Button } from '../../ui/button';
 
 export default function CartSummary() {
@@ -9,9 +10,11 @@ export default function CartSummary() {
         <span className="text-md font-bold text-neutral-950">2 Items</span>
       </div>
 
-      <Button variant={'borrowbook'} className="w-full">
-        Borrow Book
-      </Button>
+      <Link to="/Checkout">
+        <Button variant={'borrowbook'} className="w-full">
+          Borrow Book
+        </Button>
+      </Link>
     </section>
   );
 }
