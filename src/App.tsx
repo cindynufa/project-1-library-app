@@ -12,19 +12,22 @@ import Category from './components/pages/category';
 import Author from './components/pages/author';
 import Cart from './components/pages/cart';
 import Checkout from './components/pages/checkout';
-
+import Success from './components/pages/success';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
-        <Route path="/" element={<LayoutProvider/>}>
-          <Route index element={<Home />}/>
-          <Route path='detail' element={<Detail/>}/>
-          <Route path='category' element={<Category/>}/>
-          <Route path='author' element={<Author/>}/>
-          <Route path='cart' element={<Cart/>}/>
-          <Route path='checkout' element={<Checkout/>}/>
+        <Route path="/" element={<LayoutProvider />}>
+          <Route index element={<Home />} />
+          <Route path="detail" element={<Detail />} />
+          <Route path="category" element={<Category />} />
+          <Route path="author" element={<Author />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="checkout" element={<Checkout />} />
+
+          {/* Temporary - for Layout only */}
+          <Route path="success" element={<Success />} />
         </Route>
       </Route>
     )
@@ -35,6 +38,6 @@ function App() {
       <RouterProvider router={router}></RouterProvider>
     </AppProvider>
   );
-};
+}
 
 export default App;
