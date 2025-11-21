@@ -14,11 +14,11 @@ export default function Checkout() {
         <div className="flex flex-col w-full h-fit gap-8">
           <CheckoutUserInformation />
           <div className="w-full border border-neutral-300" />
-          <CheckoutBookList/>
+          <CheckoutBookList />
         </div>
 
         {/* Borrow Box Detail */}
-        <CheckoutBorrowRequest/>
+        <CheckoutBorrowRequest />
       </div>
     </main>
   );
