@@ -19,7 +19,7 @@ const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         borrowbook: "w-50 h-12 p-2 gap-2 border border-neutral-300 rounded-full bg-primary-100c text-white hover:bg-white hover:text-black",
-        share: "w-11 h-11 px-4 py-3 gap-3 border border-neutral-300 rounded-full bg-background hover:bg-neutral-300",
+        universal: "w-auto h-11 px-4 py-3 gap-3 border border-neutral-300 rounded-full bg-background hover:bg-primary-100 hover:border-primary-100c",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
