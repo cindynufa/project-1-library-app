@@ -52,7 +52,7 @@ export default function DetailBook() {
             <Link to="/Checkout">
               <Button variant={'borrowbook'}>Borrow Book</Button>
             </Link>
-            <Button variant={'share'}>
+            <Button variant={'universal'}>
               <Share2 className="w-5 h-5" />
             </Button>
           </div>
