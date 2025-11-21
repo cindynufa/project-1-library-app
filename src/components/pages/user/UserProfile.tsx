@@ -9,6 +9,8 @@ export default function UserProfile() {
       <CardHeader>
         <CardTitle className="text-display-sm font-bold">Profile</CardTitle>
       </CardHeader>
+
+      {/* User Profile */}
       <CardContent className="flex flex-col w-139.25 p-5 gap-6 border-0 bg-white rounded-2xl shadow">
         <Image
           src="/images/photo-profile.png"
