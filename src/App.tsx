@@ -13,6 +13,7 @@ import Author from './components/pages/author';
 import Cart from './components/pages/cart';
 import Checkout from './components/pages/checkout';
 import Success from './components/pages/success';
+import User from './components/pages/user';
 
 function App() {
   const router = createBrowserRouter(
@@ -25,6 +26,7 @@ function App() {
           <Route path="author" element={<Author />} />
           <Route path="cart" element={<Cart />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="borrowedList" element={<User />} />
 
           {/* Temporary - for Layout only */}
           <Route path="success" element={<Success />} />
