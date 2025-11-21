@@ -5,6 +5,7 @@ import BookInfo from '../../ui/bookInfo';
 import BookDescription from '../../ui/bookDescription';
 import BookTitle from '../../ui/bookTitle';
 import Image from '../../ui/image';
+import { Link } from 'react-router';
 
 export default function DetailBook() {
   return (
@@ -48,7 +49,9 @@ export default function DetailBook() {
 
           <div className="flex flex-row gap-3 items-center">
             <Button>Add to Cart</Button>
-            <Button variant={'borrowbook'}>Borrow Book</Button>
+            <Link to="/Checkout">
+              <Button variant={'borrowbook'}>Borrow Book</Button>
+            </Link>
             <Button variant={'share'}>
               <Share2 className="w-5 h-5" />
             </Button>
