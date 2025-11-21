@@ -26,7 +26,9 @@ function App() {
           <Route path="author" element={<Author />} />
           <Route path="cart" element={<Cart />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="profile" element={<User />} />
           <Route path="borrowedList" element={<User />} />
+          <Route path="reviews" element={<User />} />
 
           {/* Temporary - for Layout only */}
           <Route path="success" element={<Success />} />
