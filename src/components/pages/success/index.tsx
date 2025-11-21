@@ -23,7 +23,7 @@ export default function Success() {
         </p>
       </div>
 
-      <Link to="/Borrowed">
+      <Link to="/borrowedList">
         <Button variant={'borrowbook'} className="w-71.5 h-12 p-2 gap-2">
           See Borrowed List
         </Button>
