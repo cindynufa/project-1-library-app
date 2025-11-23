@@ -47,7 +47,7 @@ export default function UserBorrowedList() {
           </TabsList>
 
           {/* Card Borrowed */}
-          <TabsContent value="all">
+          <TabsContent value="all" className='flex flex-col gap-6'>
             <BorrowedActive />
             <BorrowedReturned />
             <BorrowedOverdue />
