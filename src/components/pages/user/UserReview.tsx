@@ -9,7 +9,7 @@ export default function UserReview() {
         <CardTitle className="text-display-sm font-bold">Reviews</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-6">
-        <SearchBox text={'Search book'} />
+        <SearchBox text={'Search reviews'} />
         <div className="flex flex-col gap-6">
           {Array.from({ length: 3 }).map((_, index) => (
             <UserReviewCard key={index} />
