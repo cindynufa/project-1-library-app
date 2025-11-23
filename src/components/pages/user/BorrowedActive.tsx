@@ -1,7 +1,7 @@
 import { Dot } from 'lucide-react';
 import BookTitle from '../../ui/bookTitle';
 import Image from '../../ui/image';
-import { Button } from '../../ui/button';
+import ReviewPopup from './ReviewPopup';
 
 export default function BorrowedActive() {
   return (
@@ -49,9 +49,7 @@ export default function BorrowedActive() {
           </div>
         </div>
 
-        <Button variant={'borrowbook'} className="w-45.5 h-10 p-2 gap-2">
-          Give Review
-        </Button>
+        <ReviewPopup />
       </div>
     </div>
   );
