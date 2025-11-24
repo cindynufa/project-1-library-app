@@ -14,11 +14,15 @@ import Cart from './components/pages/cart';
 import Checkout from './components/pages/checkout';
 import Success from './components/pages/success';
 import User from './components/pages/user';
+import Login from './components/pages/login';
+import Register from './components/pages/register';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<LayoutProvider />}>
           <Route index element={<Home />} />
           <Route path="detail" element={<Detail />} />
