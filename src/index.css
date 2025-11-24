@@ -106,7 +106,9 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   --spacing-6_4: 0.4rem;
+  --spacing-11_79: 0.737rem;
   --spacing-51_2: 3.2rem;
+  --spacing-121_79: 7.612rem;
   --spacing-142_38: 8.899rem;
 }
 
