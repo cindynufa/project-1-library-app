@@ -50,7 +50,7 @@ export default function RegisterForm() {
             htmlFor="phone"
             className="text-sm font-bold text-neutral-950"
           >
-            Name
+            Nomor Handphone
           </FieldLabel>
           <Input
             id="number"
