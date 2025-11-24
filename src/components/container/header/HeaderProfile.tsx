@@ -43,7 +43,7 @@ export default function HeaderProfile() {
               </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <Link to="/borrowedList" className="text-accent-red2">
+              <Link to="/Login" className="text-accent-red2">
                 Logout
               </Link>
             </DropdownMenuItem>
