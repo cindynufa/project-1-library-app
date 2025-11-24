@@ -13,14 +13,35 @@ export default function LoginForm() {
   return (
     <FieldSet className="flex flex-col w-full gap-4">
       <FieldGroup>
-        <Field className='flex flex-col gap-0.5'>
-          <FieldLabel htmlFor="email" className='text-sm font-bold text-neutral-950'>Email</FieldLabel>
-          <Input id="email" type="email" required />
+        <Field className="flex flex-col gap-0.5">
+          <FieldLabel
+            htmlFor="email"
+            className="text-sm font-bold text-neutral-950"
+          >
+            Email
+          </FieldLabel>
+          <Input
+            id="email"
+            type="email"
+            required
+            className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+          />
           <FieldError className="hidden">Please enter your email</FieldError>
         </Field>
-        <Field className='flex flex-col gap-0.5'>
-          <FieldLabel htmlFor="password" className='text-sm font-bold text-neutral-950'>Password</FieldLabel>
-          <Input id="password" type="password" placeholder="" required />
+        <Field className="flex flex-col gap-0.5">
+          <FieldLabel
+            htmlFor="password"
+            className="text-sm font-bold text-neutral-950"
+          >
+            Password
+          </FieldLabel>
+          <Input
+            id="password"
+            type="password"
+            placeholder=""
+            required
+            className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+          />
           <FieldError className="hidden">Please enter your password</FieldError>
         </Field>
 
