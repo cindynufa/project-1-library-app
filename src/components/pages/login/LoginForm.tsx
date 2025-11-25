@@ -8,8 +8,27 @@ import {
   FieldSet,
 } from '../../ui/field';
 import { Input } from '../../ui/input';
+import { useLogin } from '../../../api/auth/useLogin';
+import { useForm } from 'react-hook-form';
+import type { LoginRequest } from '../../../api/auth/LoginTypes';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { LoginSchema } from '../../../api/auth/LoginSchema';
 
 export default function LoginForm() {
+  const { mutate, isPending } = useLogin();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginRequest>({
+    resolver: zodResolver(LoginSchema),
+  });
+
+  const onSubmit = (data: LoginRequest) => {
+    mutate(data);
+  };
+
   return (
     <FieldSet className="flex flex-col w-full gap-4">
       <FieldGroup>
@@ -25,8 +44,9 @@ export default function LoginForm() {
             type="email"
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('email')}
           />
-          <FieldError className="hidden">Please enter your email</FieldError>
+          {errors.email && <FieldError>{errors.email.message}</FieldError>}
         </Field>
         <Field className="flex flex-col gap-0.5">
           <FieldLabel
@@ -41,12 +61,20 @@ export default function LoginForm() {
             placeholder=""
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('password')}
           />
-          <FieldError className="hidden">Please enter your password</FieldError>
+          {errors.password && (
+            <FieldError>{errors.password.message}</FieldError>
+          )}
         </Field>
 
-        <Button variant={'borrowbook'} className="w-full h-12 p-2 gap-2">
-          Login
+        <Button
+          variant={'borrowbook'}
+          className="w-full h-12 p-2 gap-2"
+          disabled={isPending}
+          onClick={handleSubmit(onSubmit)}
+        >
+          {isPending ? 'Logging in...' : 'Login'}
         </Button>
 
         <div className="flex flex-row gap-1 justify-center">
