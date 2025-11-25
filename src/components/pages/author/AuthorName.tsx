@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import AuthorCard from '../../ui/AuthorCard';
+import AuthorCard from '../../ui/authorCard';
 
 export default function AuthorName() {
   return (

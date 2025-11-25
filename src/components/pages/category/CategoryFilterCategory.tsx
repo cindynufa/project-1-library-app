@@ -1,4 +1,4 @@
-import CheckboxLabel from '../../ui/CheckboxLabel';
+import CheckboxLabel from '../../ui/checkboxLabel';
 
 export default function CategoryFilterCategory() {
   return (

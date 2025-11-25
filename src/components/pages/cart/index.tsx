@@ -1,4 +1,4 @@
-import SectionTitle from '../../ui/SectionTitle';
+import SectionTitle from '../../ui/sectionTitle';
 import CartList from './CartList';
 import CartSummary from './CartSummary';
 

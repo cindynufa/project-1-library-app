@@ -1,4 +1,4 @@
-import CheckboxLabel from '../../ui/CheckboxLabel';
+import CheckboxLabel from '../../ui/checkboxLabel';
 import Image from '../../ui/image';
 
 export default function CategoryFilterRating() {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
-import BookCard from '../../ui/BookCard';
+import BookCard from '../../ui/bookCard';
 import { Button } from '../../ui/button';
-import SectionTitle from '../../ui/SectionTitle';
+import SectionTitle from '../../ui/sectionTitle';
 
 export default function HomeRecommendation() {
   return (

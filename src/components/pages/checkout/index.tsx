@@ -1,4 +1,4 @@
-import SectionTitle from '../../ui/SectionTitle';
+import SectionTitle from '../../ui/sectionTitle';
 import CheckoutBookList from './CheckoutBookList';
 import CheckoutBorrowRequest from './CheckoutBorrowRequest';
 import CheckoutUserInformation from './CheckoutUserInformation';

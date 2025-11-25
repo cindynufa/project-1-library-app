@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionSubtitle from '../../ui/SectionSubtitle';
+import SectionSubtitle from '../../ui/sectionSubtitle';
 import { Label } from '../../ui/label';
 import { Input } from '../../ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '../../ui/popover';
@@ -7,7 +7,7 @@ import { Button } from '../../ui/button';
 import { CalendarIcon } from 'lucide-react';
 import { Calendar } from '../../ui/calendar';
 import { RadioGroup, RadioGroupItem } from '../../ui/radio-group';
-import CheckboxLabel from '../../ui/CheckboxLabel';
+import CheckboxLabel from '../../ui/checkboxLabel';
 import { Link } from 'react-router';
 
 function formatDate(date: Date | undefined) {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import BookCard from '../../ui/BookCard';
+import BookCard from '../../ui/bookCard';
 
 export default function CategoryBookList() {
   return (
