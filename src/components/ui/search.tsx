@@ -3,7 +3,7 @@ import { Input } from './input';
 
 interface SearchProps {
   text: string;
-  desktop: boolean;
+  desktop?: boolean;
 }
 
 export default function SearchBox({ text, desktop }: SearchProps) {
