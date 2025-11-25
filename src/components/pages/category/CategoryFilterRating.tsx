@@ -1,4 +1,4 @@
-import CheckboxLabel from '../../ui/checkboxLabel';
+import CheckboxLabel from '../../ui/CheckboxLabel';
 import Image from '../../ui/image';
 
 export default function CategoryFilterRating() {
@@ -10,20 +10,20 @@ export default function CategoryFilterRating() {
         <p className="text-md text-neutral-950">5</p>
       </CheckboxLabel>
       <CheckboxLabel className="gap-2 items-center">
-        <Image src='/icons/rate-star.png' alt='Rate Star' className='size-6'/> 
-        <p className='text-md text-neutral-950'>4</p>
+        <Image src="/icons/rate-star.png" alt="Rate Star" className="size-6" />
+        <p className="text-md text-neutral-950">4</p>
       </CheckboxLabel>
       <CheckboxLabel className="gap-2 items-center">
-        <Image src='/icons/rate-star.png' alt='Rate Star' className='size-6'/> 
-        <p className='text-md text-neutral-950'>3</p>
+        <Image src="/icons/rate-star.png" alt="Rate Star" className="size-6" />
+        <p className="text-md text-neutral-950">3</p>
       </CheckboxLabel>
       <CheckboxLabel className="gap-2 items-center">
-        <Image src='/icons/rate-star.png' alt='Rate Star' className='size-6'/> 
-        <p className='text-md text-neutral-950'>2</p>
+        <Image src="/icons/rate-star.png" alt="Rate Star" className="size-6" />
+        <p className="text-md text-neutral-950">2</p>
       </CheckboxLabel>
       <CheckboxLabel className="gap-2 items-center">
-        <Image src='/icons/rate-star.png' alt='Rate Star' className='size-6'/> 
-        <p className='text-md text-neutral-950'>1</p>
+        <Image src="/icons/rate-star.png" alt="Rate Star" className="size-6" />
+        <p className="text-md text-neutral-950">1</p>
       </CheckboxLabel>
     </div>
   );

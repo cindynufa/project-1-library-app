@@ -1,9 +1,9 @@
 import { Share2 } from 'lucide-react';
 import { Button } from '../../ui/button';
 import DetailNav from './DetailNav';
-import BookInfo from '../../ui/bookInfo';
-import BookDescription from '../../ui/bookDescription';
-import BookTitle from '../../ui/bookTitle';
+import BookInfo from '../../ui/BookInfo';
+import BookDescription from '../../ui/BookDescription';
+import BookTitle from '../../ui/BookTitle';
 import Image from '../../ui/image';
 import { Link } from 'react-router';
 

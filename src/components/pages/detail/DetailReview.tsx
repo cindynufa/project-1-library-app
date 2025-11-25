@@ -1,7 +1,7 @@
 import { Button } from '../../ui/button';
 import Image from '../../ui/image';
-import ReviewCard from '../../ui/reviewCard';
-import SectionTitle from '../../ui/sectionTitle';
+import ReviewCard from '../../ui/ReviewCard';
+import SectionTitle from '../../ui/SectionTitle';
 
 export default function DetailReview() {
   return (

@@ -1,6 +1,6 @@
-import BookTitle from '../../ui/bookTitle';
+import BookTitle from '../../ui/BookTitle';
 import { Checkbox } from '../../ui/checkbox';
-import CheckboxLabel from '../../ui/checkboxLabel';
+import CheckboxLabel from '../../ui/CheckboxLabel';
 import Image from '../../ui/image';
 
 export default function CartList() {

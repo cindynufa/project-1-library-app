@@ -1,6 +1,6 @@
-import BookTitle from '../../ui/bookTitle';
+import BookTitle from '../../ui/BookTitle';
 import Image from '../../ui/image';
-import SectionSubtitle from '../../ui/sectionSubtitle';
+import SectionSubtitle from '../../ui/SectionSubtitle';
 
 export default function CheckoutBookList() {
   return (

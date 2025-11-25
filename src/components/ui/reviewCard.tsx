@@ -28,7 +28,7 @@ export default function ReviewCard({
             <Image key={index} src="/icons/rate-star.png" alt="Rate Star" />
           ))}
         </div>
-        <p className='text-md font-semibold text-neutral-950'>{comment}</p>
+        <p className="text-md font-semibold text-neutral-950">{comment}</p>
       </div>
     </div>
   );

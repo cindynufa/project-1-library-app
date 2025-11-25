@@ -1,4 +1,4 @@
-import SectionTitle from '../../ui/sectionTitle';
+import SectionTitle from '../../ui/SectionTitle';
 import CategoryBookList from './CategoryBookList';
 import CategoryFilter from './CategoryFilter';
 

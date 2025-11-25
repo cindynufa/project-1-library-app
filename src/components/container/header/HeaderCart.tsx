@@ -3,7 +3,7 @@ import Image from '../../ui/image';
 
 export default function HeaderCart() {
   return (
-    <Link to='/Cart'>
+    <Link to="/Cart">
       <div className="flex flex-row w-full cursor-pointer">
         <Image
           src="/icons/cart.png"

@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
-import BookCard from '../../ui/bookCard';
-import SectionTitle from '../../ui/sectionTitle';
+import BookCard from '../../ui/BookCard';
+import SectionTitle from '../../ui/SectionTitle';
 
 export default function DetailRelated() {
   return (
@@ -12,7 +12,12 @@ export default function DetailRelated() {
         {Array.from({ length: 5 }).map((_, index) => (
           <div key={index}>
             <Link to="/Detail">
-              <BookCard src='/images/book-11.png' title="Book Name" author="Author name" rate={4.9} />
+              <BookCard
+                src="/images/book-11.png"
+                title="Book Name"
+                author="Author name"
+                rate={4.9}
+              />
             </Link>
           </div>
         ))}

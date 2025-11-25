@@ -1,5 +1,5 @@
-import SectionSubtitle from '../../ui/sectionSubtitle';
-import UserCard from '../../ui/userCard';
+import SectionSubtitle from '../../ui/SectionSubtitle';
+import UserCard from '../../ui/UserCard';
 
 export default function CheckoutUserInformation() {
   return (

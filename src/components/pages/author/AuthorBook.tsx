@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
-import BookCard from '../../ui/bookCard';
-import SectionTitle from '../../ui/sectionTitle';
+import BookCard from '../../ui/BookCard';
+import SectionTitle from '../../ui/SectionTitle';
 
 export default function AuthorBook() {
   return (

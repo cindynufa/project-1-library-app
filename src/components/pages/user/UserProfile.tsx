@@ -1,7 +1,7 @@
 import { Button } from '../../ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import Image from '../../ui/image';
-import UserCard from '../../ui/userCard';
+import UserCard from '../../ui/UserCard';
 
 export default function UserProfile() {
   return (

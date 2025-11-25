@@ -1,4 +1,4 @@
-import BookTitle from '../../ui/bookTitle';
+import BookTitle from '../../ui/BookTitle';
 import Image from '../../ui/image';
 
 export default function UserReviewCard() {

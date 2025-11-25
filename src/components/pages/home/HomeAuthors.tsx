@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
-import AuthorCard from '../../ui/authorCard';
-import SectionTitle from '../../ui/sectionTitle';
+import AuthorCard from '../../ui/AuthorCard';
+import SectionTitle from '../../ui/SectionTitle';
 
 export default function HomeAuthor() {
   return (

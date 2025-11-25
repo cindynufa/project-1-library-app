@@ -1,5 +1,5 @@
 import { Dot } from 'lucide-react';
-import BookTitle from '../../ui/bookTitle';
+import BookTitle from '../../ui/BookTitle';
 import Image from '../../ui/image';
 import ReviewPopup from './ReviewPopup';
 

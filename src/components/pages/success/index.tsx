@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import { Button } from '../../ui/button';
 import Image from '../../ui/image';
-import SectionSubtitle from '../../ui/sectionSubtitle';
+import SectionSubtitle from '../../ui/SectionSubtitle';
 
 export default function Success() {
   return (
