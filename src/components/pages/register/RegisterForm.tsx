@@ -8,8 +8,34 @@ import {
   FieldSet,
 } from '../../ui/field';
 import { Input } from '../../ui/input';
+import { useRegister } from '../../../api/auth/useRegister';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import {
+  type RegisterFormValues,
+  RegisterSchema,
+} from '../../../api/auth/RegisterSchema';
 
 export default function RegisterForm() {
+  const { mutate, isPending} = useRegister();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<RegisterFormValues>({
+    resolver: zodResolver(RegisterSchema),
+  });
+
+  const onSubmit = (data: RegisterFormValues) => {
+    mutate({
+      name: data.name,
+      email: data.email,
+      phoneNumber: data.phoneNumber,
+      password: data.password,
+    });
+  };
+
   return (
     <FieldSet className="flex flex-col w-full gap-4">
       <FieldGroup>
@@ -21,12 +47,12 @@ export default function RegisterForm() {
             Name
           </FieldLabel>
           <Input
-            id="text"
             type="name"
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('name')}
           />
-          <FieldError className="hidden">Please enter your name</FieldError>
+          {errors.name && <FieldError>{errors.name.message}</FieldError>}
         </Field>
 
         <Field className="flex flex-col gap-0.5">
@@ -37,29 +63,26 @@ export default function RegisterForm() {
             Email
           </FieldLabel>
           <Input
-            id="email"
             type="email"
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('email')}
           />
-          <FieldError className="hidden">Please enter your email</FieldError>
+          {errors.email && <FieldError>{errors.email.message}</FieldError>}
         </Field>
 
         <Field className="flex flex-col gap-0.5">
           <FieldLabel
-            htmlFor="phone"
+            htmlFor="phoneNumber"
             className="text-sm font-bold text-neutral-950"
           >
             Nomor Handphone
           </FieldLabel>
           <Input
-            id="number"
-            type="phone"
+            type="text"
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('phoneNumber')}
           />
-          <FieldError className="hidden">
-            Please enter your phone number
-          </FieldError>
         </Field>
 
         <Field className="flex flex-col gap-0.5">
@@ -70,13 +93,14 @@ export default function RegisterForm() {
             Password
           </FieldLabel>
           <Input
-            id="password"
             type="password"
-            placeholder=""
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('password')}
           />
-          <FieldError className="hidden">Please enter your password</FieldError>
+          {errors.password && (
+            <FieldError>{errors.password.message}</FieldError>
+          )}
         </Field>
 
         <Field className="flex flex-col gap-0.5">
@@ -87,17 +111,23 @@ export default function RegisterForm() {
             Confirm Password
           </FieldLabel>
           <Input
-            id="password"
             type="password"
-            placeholder=""
             required
             className="w-full h-12 px-4 py-2 gap-2 rounded-xl"
+            {...register('confirmPassword')}
           />
-          <FieldError className="hidden">Password must be the same</FieldError>
+          {errors.confirmPassword && (
+            <FieldError>{errors.confirmPassword.message}</FieldError>
+          )}
         </Field>
 
-        <Button variant={'borrowbook'} className="w-full h-12 p-2 gap-2">
-          Submit
+        <Button
+          variant={'borrowbook'}
+          className="w-full h-12 p-2 gap-2"
+          onClick={handleSubmit(onSubmit)}
+          disabled={isPending}
+        >
+          {isPending ? 'Processing...' : 'Submit'}
         </Button>
 
         <div className="flex flex-row gap-1 justify-center">
