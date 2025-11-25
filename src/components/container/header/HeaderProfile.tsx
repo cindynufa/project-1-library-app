@@ -7,9 +7,18 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '../../ui/dropdown-menu';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
+import { removeToken } from '../../../lib/auth';
 
 export default function HeaderProfile() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    removeToken();
+    navigate('/');
+    window.location.reload();
+  };
+
   return (
     <>
       <DropdownMenu modal={false}>
@@ -25,7 +34,7 @@ export default function HeaderProfile() {
           </div>
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className='w-46 p-4 gap-4 border-0 bg-white rounded-2xl shadow'>
+        <DropdownMenuContent className="w-46 p-4 gap-4 border-0 bg-white rounded-2xl shadow">
           <DropdownMenuGroup className="text-md font-semibold">
             <DropdownMenuItem>
               <Link to="/borrowedList" className="text-neutral-950">
@@ -42,10 +51,9 @@ export default function HeaderProfile() {
                 Reviews
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Link to="/Login" className="text-accent-red2">
-                Logout
-              </Link>
+
+            <DropdownMenuItem onClick={handleLogout}>
+              <span className="text-accent-red2 cursor-pointer">Logout</span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>
