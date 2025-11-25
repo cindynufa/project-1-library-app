@@ -27,9 +27,9 @@ export default function HeaderProfile() {
             <Image
               src="/images/photo-profile.png"
               alt="Photo Profile"
-              className="w-12 h-12"
+              className="lg:size-12 size-10"
             />
-            <p className="text-lg font-semibold text-neutral-950">John Doe</p>
+            <p className="text-lg font-semibold text-neutral-950 lg:block hidden">John Doe</p>
             <ChevronDown className="text-neutral-950" />
           </div>
         </DropdownMenuTrigger>
