@@ -17,7 +17,7 @@ import {
 } from '../../../api/auth/RegisterSchema';
 
 export default function RegisterForm() {
-  const { mutate, isPending} = useRegister();
+  const { mutate, isPending } = useRegister();
 
   const {
     register,
@@ -131,11 +131,11 @@ export default function RegisterForm() {
         </Button>
 
         <div className="flex flex-row gap-1 justify-center">
-          <p className="text-md font-semibold text-neutral-950">
+          <p className="lg:text-md text-sm font-semibold text-neutral-950">
             Already have an account?
           </p>
           <Link to="/Login">
-            <span className="text-md font-bold text-primary-100c hover:underline cursor-pointer">
+            <span className="lg:text-md text-sm font-bold text-primary-100c hover:underline cursor-pointer">
               Login
             </span>
           </Link>
