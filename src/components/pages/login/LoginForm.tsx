@@ -78,11 +78,11 @@ export default function LoginForm() {
         </Button>
 
         <div className="flex flex-row gap-1 justify-center">
-          <p className="text-md font-semibold text-neutral-950">
+          <p className="lg:text-md text-sm font-semibold text-neutral-950">
             Don't have an account?
           </p>
           <Link to="/Register">
-            <span className="text-md font-bold text-primary-100c hover:underline cursor-pointer">
+            <span className="lg:text-md text-sm font-bold text-primary-100c hover:underline cursor-pointer">
               Register
             </span>
           </Link>
